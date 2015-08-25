@@ -8,5 +8,5 @@ module.exports = (robot) ->
             message = "Some stranger just came into the office..."
         else
             message = "Look who's back! Seems that @#{req.params.username} just came into the office."
-        robot.messageRoom "#general_omsk", message
+        robot.messageRoom "hackaton", message
         resp.send "OK"
